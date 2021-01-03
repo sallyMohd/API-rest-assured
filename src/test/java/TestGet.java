@@ -14,7 +14,7 @@ public class TestGet {
 	@Test
 	void test_01() 
 	{
-		//given().get("https://jsonplaceholder.typicode.com/posts").then().statusCode(200).log().all();
+		
 		Response resp = RestAssured.get("https://jsonplaceholder.typicode.com/posts");
 		int code = resp.getStatusCode();
 		Assert.assertEquals(code, 200);
